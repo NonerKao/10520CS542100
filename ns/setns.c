@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		
 		printf("enter %s...\n", argv[1]);
 		char *arg[] = {"bin/sh", NULL};
-		char *env[] = {"PS1=\033[1;33mcontainer $ \033[m", NULL};
+		char *env[] = {"PS1=\033[1;33mcontainer $ \033[m", "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", NULL};
 		execve("/bin/sh", arg, env);
 	}
 

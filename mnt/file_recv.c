@@ -6,7 +6,6 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "inotify_helper.h"
 #define BUF_LEN (10 * (sizeof(struct inotify_event) + NAME_MAX + 1))
 
 int main(int argc, char *argv[])
