@@ -1,14 +1,12 @@
 ### Assignment 2: Container Practice
 
----
-
 This package provides you example programs that helps you accomplish this assignment.
 
 * ipc, net, mnt: The three directories contain one-shot server-client communication examples.
 * runc: The files to run a runc container, config.json and rootfs, are provided.
 * ns: A demonstration of how a proccess can set its namespace.
 
-Note that the last two requires the root privilege.
+Note that the last two requires the **root privilege**.
 
 ---
 
@@ -42,4 +40,4 @@ You should implement the transformation from a input message to the standard out
 
 ### Questions?
 
-Please report any problems you encounter at ILMS.  We will do our best to help you accomplish this assignment.
+Please report any problems you encounter on ILMS.  We will do our best to help you accomplish this assignment.

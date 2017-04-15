@@ -33,7 +33,7 @@
 	},
 	"root": {
 		"path": "rootfs",
-		"readonly": true
+		"readonly": false
 	},
 	"hostname": "runc",
 	"mounts": [
@@ -128,7 +128,7 @@
 			},
 			{
 				"type": "network",
-				"path": "/var/run/netns/demo3"
+				"path": "/var/run/netns/net415"
 			},
 			{
 				"type": "ipc"
