@@ -23,11 +23,11 @@ ip link set $VETH_HOST master $NEWBRIDGE
 
 ip addr add $BRADDR dev $NEWBRIDGE
 ip netns exec $NEWNETNS ip addr add $VETHADDR dev $VETH_CONT
-ip netns exec $NEWNETNS ip route add default via $NEWROUTE
 
 ip link set $NEWBRIDGE up
 ip link set $VETH_HOST up
 ip netns exec $NEWNETNS ip link set $VETH_CONT up
+ip netns exec $NEWNETNS ip route add default via $NEWROUTE
 
 iptables -A FORWARD -o $WAN -i $NEWBRIDGE -s $SUBDOMAIN -m conntrack --ctstate NEW -j ACCEPT
 iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
