@@ -33,8 +33,9 @@ OK?
 OK?
 ...
 ```
+where the first lines are user inputs, and the indentical,second lines are echo from the server program.
 
-Note: a desired echo service should like `grep .` command.  
+Note: a desired echo service should like be `grep .` command.  
 
 ---
 
