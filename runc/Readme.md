@@ -8,9 +8,21 @@ to launch a container with settings in `config.json` and the root directory in r
 
 ---
 
+### But the command above is not working......
+
+If you don't need to configure network for your container, you may edit the config.json file, and remove the line:
+```
+				"path": "/var/run/netns/net415"
+```
+whiich should be at line 133.
+
+To launch a container with network settings, please follow the instruction in the next section.
+
+---
+
 ### Setup network for runc container
 
-If networking is needed in container, you may execute the `script.sh` to setup a network namespace `net415`.  However, it may not work bydefault.  You **have to** some custom setup in the script.sh:
+If networking is needed in container, you **SHOULD** execute the `script.sh` to setup a network namespace `net415`.  However, it may not work by default.  You **have to** do some custom setup in the script.sh:
 ```
 ...
 WAN=enp3s0
