@@ -34,7 +34,7 @@ OK?
 ...
 ```
 
-You should implement the transformation from a input message to the standard output.
+Note: a desired echo service should like `grep .` command.  
 
 ---
 
